@@ -1,4 +1,4 @@
-// for add item to cart
+
 
 export const addFavorite = (product) => {
   return {
@@ -7,7 +7,6 @@ export const addFavorite = (product) => {
   };
 };
 
-// for delete item to cart
 
 export const delFavorite = (product) => {
   return {
