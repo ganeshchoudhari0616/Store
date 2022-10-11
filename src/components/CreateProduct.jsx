@@ -9,7 +9,7 @@ export default function CreateProduct() {
 			description: e.target.description.value,
 			category: e.target.category.value,
 			avatar: e.target.avatar.value,
-            developerEmail: "onkarbagade21@gmail.com"
+            developerEmail: "ganeshchoudhari4747@gmail.com"
 		};
         console.log(data);
         const res = await fetch('https://upayments-studycase-api.herokuapp.com/api/products', {
