@@ -17,7 +17,7 @@ const Products = () => {
 		dispatch(addFavorite(product));
 	};
 
-	// useeffect start
+	
 	useEffect(() => {
 		setLoading(true);
 		const getProduct = async () => {
@@ -31,7 +31,7 @@ const Products = () => {
 		};
 		getProduct();
 	}, [id]);
-	// useeffect end
+	
 
 	const Loading = () => {
 		return (
