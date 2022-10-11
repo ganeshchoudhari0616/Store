@@ -4,7 +4,7 @@ const handleCart = (state = favorite, action) => {
   const product = action.payload;
   switch (action.type) {
     case "ADD_ITEM":
-      // check if product is already exit
+      
       const exit = state.find((x) => x._id === product._id);
       if (exit) {
         // increase the qty
