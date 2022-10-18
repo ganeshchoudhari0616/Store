@@ -2,19 +2,25 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { delFavorite } from "./../redux/action/index";
-const Cart = () => {
+const Favorite = () => {
   const data = useSelector((state) => state.handleCart);
   const dispatch = useDispatch();
   const deleteProduct = (product) => {
     dispatch(delFavorite(product));
   }
+  const style = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    margin: "6rem"
+  }
   return (
-    <>
+    <div style={style}>
     {data.map(product => {
       return <div className="row" key={product._id}>
         <div className="col-md-4">
           <img
-            src={product.avatar}
+            src={product.image}
             alt={product.name}
             height="200px"
             width="180px"
@@ -34,8 +40,8 @@ const Cart = () => {
         </div>
       </div>
     })}
-    </>
+    </div>
   );
 };
 
-export default Cart;
+export default Favorite;
