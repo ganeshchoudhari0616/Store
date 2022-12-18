@@ -37,9 +37,7 @@ const Navbar = () => {
             </ul>
             <div className="buttons">
              
-              <Link to="createProduct" className="btn btn-outline-dark ms-2">
-                <i className="fa-solid fa-plus ms-2"></i> Create Product
-              </Link>
+              
               <Link to="favorite" className="btn btn-outline-dark ms-2">
                 <i className="fa-solid fa-heart ms-2"></i> Favorite(
                 {state.length})
